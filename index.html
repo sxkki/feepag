@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="titulo">
+    <h1>Fee for payments</h1>
+    <p>page dedicated for fee</p>
+    </div>
+    <br><br><br>
+    <form name="fvalida">
+      <table class="tabla">
+        <caption>El monto limite es 1.000.000</caption>
+        <tr>
+          <td>Monto de su pago:</td>
+          <td><input type="text" name="monto" size="10" maxlength="1000000"></td>
+        </tr>
+        <tr>
+          <td>Fee 5%:</td>
+          <td colspan="4" name="fee" id="fee"></td>
+        </tr>
+        <tr>
+          <td>Monto a pagar:</td>
+          <td colspan="4" name="feetotal" id="total"></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center"><input class="button" type="button" value="Calcular" onclick="calcula()"></td>
+        </tr>
+      </table>   
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.titulo{
+  text-align: center;
+  color: violet;
+  border-style: inset;
+  border-color: blueviolet;
+  width: 400px;
+}
+
+.tabla{
+  display: block;
+  margin:0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: blueviolet;
+  width: 325px;
+  border-radius: 25px;
+  color: #0833A2;
+}
