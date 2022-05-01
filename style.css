@@ -1,9 +1,6 @@
 .titulo{
   text-align: center;
   color: violet;
-  border-style: inset;
-  border-color: blueviolet;
-  width: 400px;
 }
 
 .tabla{
@@ -12,7 +9,16 @@
   text-align: center;
   padding: 20px;
   background-color: blueviolet;
-  width: 325px;
+  width: 400px;
   border-radius: 25px;
   color: #0833A2;
+}
+
+.comi{
+  color: violet;
+}
+
+body{
+  border-style: inset;
+  border-color: blueviolet;
 }
