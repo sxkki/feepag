@@ -21,12 +21,32 @@ function calcula(){
       alert('Por favor ingrese una cantidad.')
       document.fvalida.monto.focus()
       return 0;
-    }else{
-      
-      var sum = monto * 5 / 100
-      var total = sum + monto
-
-      document.getElementById('fee').innerHTML = sum;
-      document.getElementById('total').innerHTML = total;
     }
+
+    if (document.fvalida.metodo.selectedIndex==0){
+      alert("Debe seleccionar un metodo.")
+      document.fvalida.metodo.focus()
+      return 0;
+    }else{
+      if(document.fvalida.metodo.selectedIndex==1){
+        var sum1 = monto * 3 / 100
+        var total1 = sum1 + monto
+        document.getElementById('fee').innerHTML = sum1;
+        document.getElementById('total').innerHTML = total1;
+      }
+      if(document.fvalida.metodo.selectedIndex==2){
+        var sum2 = monto * 2 / 100
+        var total2 = sum2 + monto
+        document.getElementById('fee').innerHTML = sum2;
+        document.getElementById('total').innerHTML = total2;
+      }
+      if(document.fvalida.metodo.selectedIndex==3){
+        var sum3 = monto * 4 / 100
+        var total3 = sum3 + monto
+        document.getElementById('fee').innerHTML = sum3;
+        document.getElementById('total').innerHTML = total3;
+      }
+    }
+
+    
 }

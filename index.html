@@ -19,7 +19,18 @@
           <td><input type="text" name="monto" size="14" maxlength="10"></td>
         </tr>
         <tr>
-          <td>Fee 5%:</td>
+          <td>Seleccione su metodo:</td>
+          <td>
+            <select name="metodo" id="metodo">
+              <option value="elegir">Elegir</option>
+              <option value="pagoMovil">Pago Movil</option>
+              <option value="transferencia">Transferencia</option>
+              <option value="usdt">USDT</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Fee:</td>
           <td colspan="4" name="fee" id="fee"></td>
         </tr>
         <tr>
@@ -31,6 +42,14 @@
         </tr>
       </table>   
     </form>
+    <div class="comi">
+      <p>Nuestras Comisiones:</p>
+      <ul>
+        <li>Pago Movil 3% de comision.</li>
+        <li>Trasnferencia 2% de comision.</li>
+        <li>USDT 4% de comision.</li>
+      </ul>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
