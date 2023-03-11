@@ -7,9 +7,9 @@
   </head>
   <body>
     <div class="titulo">
-      <h1>Fee for payments</h1>
+      <h1>Calculator For Fee</h1>
     </div>
-    <br><br><br>
+    <br>
     <form name="fvalida">
       <table class="tabla">
         <caption>Calculador de Tarifas</caption>
@@ -23,14 +23,12 @@
             <select name="metodo" id="metodo">
               <option value="metodo0">Elegir</option>
               <option value="metodo1">Paypal</option>
-              <option value="metodo2">Zelle</option>
-              <option value="metodo3">Bds</option>
             </select>
           </td>
         </tr>
         <tr>
           <td>Fee:</td>
-          <td colspan="4" name="fee" id="fee"></td>
+          <td colspan="4" name="fee" id="fee" maxlength="3" minlength="3"></td>
         </tr>
         <tr>
           <td>Monto a pagar:</td>
@@ -41,13 +39,15 @@
         </tr>
       </table>   
     </form>
+
     <div class="comi">
       <p>Nuestras Comisiones:</p>
       <ul>
-        <li>Paypal 15.5% de comision.</li>
-        <li>Zelle 8.5% de comision.</li>
-        <li>Bolivares 8.5% de comision.</li>
+        <li>Paypal 7% de comision.</li>
       </ul>
+    </div>
+    <div class="button-next-page">
+      <button><a href="/custom.html">Custom Calculator Fee</a></button>
     </div>
     <script src="app.js"></script>
   </body>
