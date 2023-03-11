@@ -7,9 +7,9 @@ function calcula(){
   var monto = parseInt(document.fvalida.monto.value);
   var metodo = document.fvalida.metodo.value;
   var tarifas = {
-      "metodo1": 0.07
+      "metodo1": 7
   };
-  var tarifa = tarifas[metodo] * monto;
+  var tarifa = tarifas[metodo] * monto / 100;
   var total = monto + tarifa;
 
   document.getElementById('fee').innerHTML = tarifa;
@@ -17,17 +17,14 @@ function calcula(){
 }
 
 function calculaV1(){
-  if (document.fvalida.monto.value === "" || document.fvalida.metodo.selectedIndex==0) {
+  if (document.fvalida.monto.value === "" || document.fvalida.metodo.value === "") {
     alert('Por favor ingrese una cantidad y seleccione un metodo.');
     document.fvalida.monto.focus();
     return;
 }
 var monto = parseInt(document.fvalida.monto.value);
 var metodo = parseInt(document.fvalida.metodo.value);
-var tarifas = {
-    "metodo1": 0.07
-};
-var tarifa = tarifas[metodo] * monto;
+var tarifa = metodo * monto / 100;
 var total = monto + tarifa;
 
 document.getElementById('fee').innerHTML = tarifa;

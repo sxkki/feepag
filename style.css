@@ -6,15 +6,17 @@
 **/
 
 
-.titulo{
+.titulo {
   text-align: center;
   color: #3197AC;
   font-size: 26px;
 }
 
-.tabla{
-  display: block;
-  margin:0 auto;
+.tabla {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   text-align: center;
   padding: 20px;
   background-color: #CECAB4;
@@ -23,13 +25,13 @@
   color: #246F98;
 }
 
-.comi{
+.comi {
   padding: 10px;
   color: #CECAB4;
 }
 
 a {
-  color:#246F98
+  color: #246F98
 }
 
 a:visited {
@@ -52,22 +54,25 @@ a:visited {
   font-size: 24px;
 }
 
-body{
+body {
   background-color: #246F98;
   border-style: solid;
   border-color: #d1b446;
 }
 
 @media (max-width: 767px) {
-  .titulo{
+
+  .titulo {
     text-align: center;
     color: #3197AC;
     font-size: 26px;
   }
-  
-  .tabla{
-    display: block;
-    margin:0 auto;
+
+  .tabla {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     text-align: center;
     padding: 20px;
     background-color: #CECAB4;
@@ -75,14 +80,37 @@ body{
     border-radius: 25px;
     color: #246F98;
   }
-  
-  .comi{
+
+  .comi {
     padding: 10px;
     color: #CECAB4;
   }
-  
-  body{
-    padding: 10px;
+
+  a {
+    color: #246F98
+  }
+
+  a:visited {
+    color: #246F98;
+  }
+
+  .button-next-page {
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .button-previus-page {
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  body {
     background-color: #246F98;
     border-style: solid;
     border-color: #d1b446;
