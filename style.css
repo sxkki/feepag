@@ -5,10 +5,14 @@
 #D1B446
 **/
 
+body {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(218,218,215,1) 0%);
+}
 
 .titulo {
   text-align: center;
-  color: #3197AC;
+  color: #051da3;
   font-size: 26px;
 }
 
@@ -19,10 +23,10 @@
   margin: 0 auto;
   text-align: center;
   padding: 20px;
-  background-color: #CECAB4;
+  background-color: #3835eeda;
   width: 400px;
   border-radius: 25px;
-  color: #246F98;
+  color: #ffffff;
 }
 
 .comi {
@@ -54,20 +58,14 @@ a:visited {
   font-size: 24px;
 }
 
-body {
-  background-color: #246F98;
-  border-style: solid;
-  border-color: #d1b446;
-}
-
 @media (max-width: 767px) {
 
   .titulo {
     text-align: center;
-    color: #3197AC;
+    color: #051da3;
     font-size: 26px;
   }
-
+  
   .tabla {
     display: grid;
     justify-content: center;
@@ -75,10 +73,10 @@ body {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    background-color: #CECAB4;
-    width: 355px;
+    background-color: #3835eeda;
+    width: 400px;
     border-radius: 25px;
-    color: #246F98;
+    color: #ffffff;
   }
 
   .comi {

@@ -2,55 +2,58 @@
 <html>
 
 <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+  <title></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="titulo">
+
+  <br>
+  <form name="fvalida">
+    <table class="tabla">
+      <div class="titulo">
         <h1>Calculator For Fee</h1>
-    </div>
-    <br>
-    <form name="fvalida">
-        <table class="tabla">
-            <caption>Calculador de Tarifas</caption>
-            <tr>
-                <td>Monto de su pago:</td>
-                <td><input type="text" name="monto" size="14" maxlength="10"></td>
-            </tr>
-            <tr>
-                <td>Ingrese el % de comision:</td>
-                <td>
-                    <input type="text" name="metodo" size="3" minlength="1" maxlength="3">
-                </td>
-            </tr>
-            <tr>
-                <td>Fee:</td>
-                <td colspan="4" name="fee" id="fee" maxlength="3" minlength="3"></td>
-            </tr>
-            <tr>
-                <td>Monto a pagar:</td>
-                <td colspan="4" name="feetotal" id="total"></td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center"><input class="button" type="button" value="Calcular" onclick="calculaV1()">
-                </td>
-            </tr>
-        </table>
-    </form>
-    <div class="comi">
-        <p>Nuestras Comisiones:</p>
-        <ul>
-            <li>Paypal 7% de comision.</li>
-        </ul>
-    </div>
-    <div class="button-previus-page">
-        <button><a href="/index.html">Paypal Calculator Fee</a></button>
-    </div>
-    <script src="app.js"></script>
+      </div>
+      <tr>
+        <td>Monto de su pago:</td>
+        <td><input type="text" name="monto" size="14" maxlength="10"></td>
+      </tr>
+      <tr>
+        <td>Seleccione su metodo de pago:</td>
+        <td>
+          <select name="metodo" id="metodo">
+            <option value="metodo0">Elegir</option>
+            <option value="metodo1">Paypal</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Fee:</td>
+        <td colspan="4" name="fee" id="fee" maxlength="3" minlength="3"></td>
+      </tr>
+      <tr>
+        <td>Monto a pagar:</td>
+        <td colspan="4" name="feetotal" id="total"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input class="button" type="button" value="Calcular" onclick="calcula()"></td>
+      </tr>
+    </table>
+  </form>
+
+  <div class="comi">
+    <p>Nuestras Comisiones:</p>
+    <ul>
+      <li>Paypal 7% de comision.</li>
+    </ul>
+  </div>
+  <div class="button-next-page">
+    <button><a href="/custom.html">Custom Calculator Fee</a></button>
+  </div>
+  <script src="app.js"></script>
 </body>
 
 </html>
