@@ -22,8 +22,8 @@ function calculaV1(){
     document.fvalida.monto.focus();
     return;
 }
-var monto = parseInt(document.fvalida.monto.value);
-var metodo = parseInt(document.fvalida.metodo.value);
+var monto = parseFloat(document.fvalida.monto.value);
+var metodo = parseFloat(document.fvalida.metodo.value);
 var tarifa = metodo * monto / 100;
 var total = monto + tarifa;
 
