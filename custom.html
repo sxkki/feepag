@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title></title>
+  <title>Apps</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,49 +11,63 @@
 
 <body>
 
-  <br>
-  <form name="fvalida">
-    <table class="tabla">
-      <div class="titulo">
-        <h1>Calculator For Fee</h1>
-      </div>
-      <tr>
-        <td>Monto de su pago:</td>
-        <td><input type="text" name="monto" size="14" maxlength="10"></td>
-      </tr>
-      <tr>
-        <td>Seleccione su metodo de pago:</td>
-        <td>
-          <select name="metodo" id="metodo">
-            <option value="metodo0">Elegir</option>
-            <option value="metodo1">Paypal</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>Fee:</td>
-        <td colspan="4" name="fee" id="fee" maxlength="3" minlength="3"></td>
-      </tr>
-      <tr>
-        <td>Monto a pagar:</td>
-        <td colspan="4" name="feetotal" id="total"></td>
-      </tr>
-      <tr>
-        <td colspan="2" align="center"><input class="button" type="button" value="Calcular" onclick="calcula()"></td>
-      </tr>
-    </table>
-  </form>
+  <div class="titulo">
+      <h1>Aplicativos</h1>
+  </div>
+  <div class="container">
+    <div class="item item-1">
+        <h3 class="title-calc">
+          Calculadora de Porcentaje
+        </h3>
+        <form name="fvalida">
+        <p>
+          Monto a calcular: 
+          <input type="text" name="monto" size="14" maxlength="15">
+        </p>
+        <p>
+          Porcentaje a calcular: 
+          <input type="text" name="metodo" size="5" maxlength="5">
+        </p>
+        <button type="button" value="calcula" onclick="calculaV1()">
+          Calcular
+        </button>
+        <p>Porcentaje: 
+          <input type="text" name="fee" id="fee" size="5" readonly disabled>
+        </p> 
+        <p>
+          Monto Total: 
+          <input type="text" name="feetotal" id="total" size="15" readonly disabled>
+        </p> 
+        </form> 
+    </div>
+    <div class="item item-2">
+      <h3 class="titlte-calc">Calculadora de Comisiones</h3>
+      <form name="Pvalida">
+        <p>Las Comisiones de Paypal: 
+          <input type="text" value="5.40" placeholder="5.40" name="fee1" id="fee1" size="5" maxlength="5"> 
+          % mas $ 
+          <input type="text" value="0.30" placeholder="0.30" name="fee2" id="fee2" size="3" maxlength="3">
+        </p>
+        <p>
+          Para Recibir: 
+          <input type="text" name="montoRecib" id="montoRecib" size="10" maxlength="15">
+        </p>
+        <button type="button" value="calcula" onclick="calculaV2()">
+          Calcular
+        </button>
+        <p>
+          Hay que Enviar: 
+          <input type="text" name="montoEnvio" id="montoEnvio" size="10" maxlength="15" readonly disabled>
+        </p>
+        <p>
+          La Comisión es de:
+          <input type="text" name="montoFee" id="montoFee" size="10" maxlength="15" readonly disabled>
+        </p>
+       </form>
+    </div>
+  </div>
 
-  <div class="comi">
-    <p>Nuestras Comisiones:</p>
-    <ul>
-      <li>Paypal 7% de comision.</li>
-    </ul>
-  </div>
-  <div class="button-next-page">
-    <button><a href="/custom.html">Custom Calculator Fee</a></button>
-  </div>
+  
   <script src="app.js"></script>
 </body>
-
 </html>

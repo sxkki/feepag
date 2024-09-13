@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title></title>
+    <title>App Porcentaje</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,33 +19,30 @@
                 <h1>Calculadora de Porcentaje</h1>
             </div>
             <tr>
-                <td>Monto de su pago:</td>
-                <td><input type="number" name="monto" size="14" maxlength="10"></td>
+                <td>Monto a calcular:</td>
+                <td><input type="text" name="monto" size="14" maxlength="10"></td>
             </tr>
             <tr>
-                <td>Ingrese el % de comision:</td>
+                <td>Ingrese el % a calcular:</td>
                 <td>
-                    <input type="number" name="metodo" size="6" minlength="1" maxlength="5">
+                    <input type="text" name="metodo" size="6" minlength="1" maxlength="5">
                 </td>
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <button type="button" class="btn btn-light" value="Calcula" onclick="calculaV1()">Calcular</button>
+                    <button type="button" class="btn btn-light" value="Calcula" onclick="calcularV()">Calcular</button>
                 </td>
             </tr>
             <tr>
-                <td>Fee:</td>
+                <td>Porcentaje:</td>
                 <td colspan="4" name="fee" id="fee" maxlength="3" minlength="3"></td>
             </tr>
             <tr>
-                <td>Monto a pagar:</td>
+                <td>Monto Total:</td>
                 <td colspan="4" name="feetotal" id="total"></td>
             </tr>
         </table>
     </form>
-    <!-- <div class="button-previus-page">
-        <button><a href="/index.html">Paypal Calculator Fee</a></button>
-    </div> -->
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
