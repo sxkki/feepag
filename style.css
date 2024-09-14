@@ -85,12 +85,29 @@ body {
   }
   
   .item-1 {
+    grid-area: main;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    justify-self: center;
   }
-
+  
   .item-2 {
+    grid-area: main;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-self: center;
+  }
+  
+  .item-3 {
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    justify-self: center;
   }
 }
